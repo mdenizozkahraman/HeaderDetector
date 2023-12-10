@@ -1,7 +1,9 @@
 import requests
 
-def func_get_headers(url):
+url = input("Enter url: ")
 
+
+def func_get_headers(url):
     headers = requests.get(url).headers
 
     # https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
@@ -37,7 +39,6 @@ def func_get_headers(url):
         else:
             ownedHeaders.append(header)
 
-
     if ownedHeaders:
         print("Available Headers:")
         for header in ownedHeaders:
@@ -60,7 +61,7 @@ def func_get_headers(url):
         print("All headers available.")
 
     # return headers.get("Cache-Control")
-    #return headers
+    # return headers
 
     # print("Data: ", headers)
     # print()
@@ -73,7 +74,6 @@ def func_get_headers(url):
     # print(headers.get("Date"))
     # print()
     # print(headers.get("Connection"))
-
 
 
 def get_recommendation(header):
@@ -111,8 +111,4 @@ def get_recommendation(header):
     return "No recommendation found for the specified header."
 
 
-
-func_get_headers("https://www.google.com")
-
-
-
+func_get_headers(url)
