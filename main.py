@@ -1,6 +1,6 @@
 import requests
 
-url = input("Enter url: ")
+url = input("Enter url: (i.e. https://www.example.com)")
 
 
 def func_get_headers(url):
@@ -23,8 +23,6 @@ def func_get_headers(url):
         'X-Content-Type-Options',
         'X-Frame-Options',
         'Content-Security-Policy',
-        'TESTTESTTEST',
-        'AAAAAABBBBBCCCCC'
     ]
 
     missingHeaders = []
