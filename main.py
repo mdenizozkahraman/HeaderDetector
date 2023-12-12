@@ -1,6 +1,14 @@
 import requests
 
-url = input("Enter url: (i.e. https://www.example.com)")
+url = input("Enter url: ")
+
+if not url.startswith("http://") or not url.startswith("https://"):
+    url = "http://" + url
+    print("Modified URL:", url)
+
+
+print()
+
 
 
 def func_get_headers(url):
