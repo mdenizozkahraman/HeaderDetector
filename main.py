@@ -66,20 +66,7 @@ def func_get_headers(url):
     else:
         print("All headers available.")
 
-    # return headers.get("Cache-Control")
-    # return headers
 
-    # print("Data: ", headers)
-    # print()
-    # print("Expected Headers: ", expectedHeaders)
-    # print()
-    # print("Missing Headers: ", missingHeaders)
-    # print()
-    # print("Owned Headers ", ownedHeaders)
-    # print()
-    # print(headers.get("Date"))
-    # print()
-    # print(headers.get("Connection"))
 
 
 def get_recommendation(header):
